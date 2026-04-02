@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Universe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>💜 AI UNIVERSE 💜</h1>
+
+<div id="auth">
+  <input id="username" placeholder="Username">
+  <input id="password" placeholder="Password">
+  <button onclick="login()">Enter</button>
+</div>
+
+<div id="app" class="hidden">
+  <input id="charName" placeholder="Name">
+  <textarea id="personality" placeholder="Describe personality..."></textarea>
+  <button onclick="createCharacter()">Create</button>
+
+  <div id="charList"></div>
+
+  <div id="chatSection" class="hidden">
+    <h3 id="activeName"></h3>
+    <div id="chatBox"></div>
+    <input id="msg" placeholder="Type or speak...">
+    <button onclick="sendMessage()">Send</button>
+    <button onclick="startVoice()">🎤</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
